@@ -62,31 +62,25 @@
     <form id="myForm" name="myForm" action="/upload" method="POST" enctype="multipart/form-data" onsubmit="return false;">
     <div class="container bs-docs-container">
     	<h2>数据文件上传</h2>
-    	<div class="container">
-    		<input type="file" id="the_file"/>
-    	</div>
+        <input type="file" id="the_file"/>
     </div>
     <div class="container bs-docs-container">
     	<h2>算法选择</h2>
-    	<div class="container">
-    		<input type="radio" name="algorithm" value="xx1" checked="checked"> 算法1 
-			<input type="radio" name="algorithm" value="xx2"> 算法2 
-			<input type="radio" name="algorithm" value="xx3"> 算法3 
-			<input type="radio" name="algorithm" value="xx4"> 算法4<br> 
-    	</div>
+        <input type="radio" name="algorithm" value="xx1" checked="checked"> 算法1
+        <input type="radio" name="algorithm" value="xx2"> 算法2
+        <input type="radio" name="algorithm" value="xx3"> 算法3
+        <input type="radio" name="algorithm" value="xx4"> 算法4<br>
     </div>
     <div class="container bs-docs-container">
     	<h2>提交后台处理</h2>
-    	<button id="sub">提交</button>
+    	<button id="sub" style="margin-left: 50px">提交</button>
     </div>
+    </form>
     <HR style="FILTER: alpha(opacity=100,finishopacity=0,style=3)" width="80%" color=#987cb9 SIZE=3>
     <div class="container bs-docs-container">
     	<h2>结果输出</h2>
-    	<div class="container">
-    		
-    	</div>
+        <textarea type="text" class="form-control" id="output" style="height: 150px"></textarea>
     </div>
-	</form>
 <!-- Placed at the end of the document so the pages load faster -->
 <script src="/static/jquery/jquery-1.11.3.min.js"></script>
 <script src="/static/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
