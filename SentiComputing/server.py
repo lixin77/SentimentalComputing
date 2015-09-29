@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from flask import Flask, request, render_template, make_response, url_for, redirect
 
 app = Flask(__name__)
@@ -21,6 +22,7 @@ def upload():
     if request.method == 'POST':
         f = request.files['the_file']
         f.save('/var/www/uploads/test.txt')
+        return make_response("上传成功")
 
 @app.route('/index', methods=['GET', 'POST'])
 def index():
@@ -32,3 +34,4 @@ def index():
 
 if __name__ == '__main__':
     app.run()
+    #app.run(host="0.0.0.0", port=9999)
