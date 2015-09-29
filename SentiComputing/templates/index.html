@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <!-- Bootstrap core CSS -->
 	<link href="/static/bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="/static/jquery/jquery-1.11.3.min.js"></script>
+    <script src="/static/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
     <title>情感计算</title>
     <script type="text/javascript">
     	$(document).ready(function(){
+            alert("ready")
   			$("button").click(function(){
   				var id = $(this).attr("id")
   				if(id == "sub"){
@@ -82,7 +85,7 @@
         <textarea type="text" class="form-control" id="output" style="height: 150px"></textarea>
     </div>
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="/static/jquery/jquery-1.11.3.min.js"></script>
-<script src="/static/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+
+
 </body>
 </html>
