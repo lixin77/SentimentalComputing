@@ -9,10 +9,10 @@
     <title>情感计算</title>
     <script type="text/javascript">
     	$(document).ready(function(){
-            alert("ready")
   			$("button").click(function(){
   				var id = $(this).attr("id")
   				if(id == "sub"){
+					alert("submit the request")
   					var selected_algorithm = $("input[name='algorithm']:checked").val();
   					var files = document.getElementById('the_file');
   					if (!files){
@@ -21,12 +21,11 @@
   					}
   					var myForm = document.getElementById('myForm')
   					// submit the form
-  					$('myForm').submit()
+					myForm.submit();
   				}
   			});
   		});
   	</script>
-});
 </head>
 <body>
 	<header class="navbar navbar-static-top bs-docs-nav" id="top" role="banner">
@@ -65,7 +64,7 @@
     <form id="myForm" name="myForm" action="/upload" method="POST" enctype="multipart/form-data" onsubmit="return false;">
     <div class="container bs-docs-container">
     	<h2>数据文件上传</h2>
-        <input type="file" id="the_file"/>
+        <input type="file" id="the_file" name="the_file"/>
     </div>
     <div class="container bs-docs-container">
     	<h2>算法选择</h2>
